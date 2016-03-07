@@ -1,0 +1,82 @@
+/* body elements */
+body {
+	background: #9d9f90;
+}
+
+/* class container elements */
+.container {
+	width: 81.3%; /* 13px */
+	background: #ddd;
+	border: 2px solid #ddd;
+	border-radius: 2em 2em; 
+}
+
+/* class jumbotron elements */
+.jumbotron {
+	background-color: #9d9f90;
+	color: #fff;
+}
+
+/* h1 elements */
+h1 {
+	color: #000;
+	text-align: center;
+	margin: 1.53846153846154% 0%; /* 20px/13px, 0px */
+}
+
+/* h2 elements */
+h2 {
+	color: #000;
+	margin: 1.53846153846154%; /* 20px/13px */
+	padding: 1.53846153846154%; 
+	text-align: center;
+}
+
+/* paragraph and block quote elements */
+p, blockquote {
+	color: #000;
+	margin: 1.53846153846154%; /* 20px/13px */
+	font-size: 1.15em; 
+}
+
+/* image and image paragraph elements */
+img, img p {
+	padding: 1.53846153846154%; /* 20px/13px */
+}
+
+/* image thumbnail elements */
+.img-thumbnail {
+	background-color: #9d9f90;
+}
+
+/* footer paragraph elements */
+footer p {
+	text-align: center;
+}
+
+/* Media query for mobile devices */
+@media screen and (min-width: 0px) {
+	.container {
+		width: 81.3%; /* 500px/13px */
+		font-family: serif; 
+		color: #666; 
+	}
+}
+
+/* Media query for tablet devices */
+@media screen and (min-width: 1150px) {
+	.container {
+		width: 81.3%; /* 1200px/13px */
+		font-family: serif; 
+		color: #666; 
+	}
+}
+
+/* Media query for desktop devices */
+@media screen and (min-width: 1400px) {
+	.container {
+		width: 81.3%; /* 1400px/13px */
+		font-family: serif; 
+		color: #666;
+	}
+}
