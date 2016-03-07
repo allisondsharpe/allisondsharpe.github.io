@@ -1,0 +1,84 @@
+/* body items */
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* "content" id items */
+#content {
+    float: left;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+/* h1 items */
+h1 {
+    font-weight: 400;
+}
+
+/* h3 items */
+h3 {
+    font-weight: 400;
+}
+
+/* paragraph items */
+p {
+    font-weight: 100;
+}
+
+/* article items */
+article {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* unordered list items */
+ul {
+    list-style-type: circle;
+}
+
+/* a items */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* a hover items */
+a:hover {
+    color: #808080;
+}
+
+/* "demo" id items */
+#demo {
+    float: left;
+    margin-left: 100px;
+    width: 40%;
+    border-left: 1px solid lightgray;
+    padding: 15px;
+}
+
+/* "demo button" id items */
+#demoBtn {
+    background: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 0.3em;
+    color: #fff;
+}
+
+/* "demo button" id hover items */
+#demoBtn:hover {
+    background: #eee;
+    border: 1px solid #eee;
+    color: #000;
+}
+
+/* unordered list direct list items */
+ul > li {
+    margin-bottom: 5px;
+}
+
+/* footer items */
+footer {
+    clear: left;
+    width: 50%;
+}

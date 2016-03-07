@@ -1,0 +1,131 @@
+body {
+    font-family: sans-serif;
+    background: #454545;
+}
+
+.pg-container {
+    background: linear-gradient(#454545, #fff);
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: -10px;
+    border: 1px solid #454545;
+    box-shadow: 10px 5px 5px #333;
+    height: 470px;
+}
+
+h1 {
+    float: left;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5em;
+    background: #666;
+    border-radius: 0.2em;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #bc5357;
+}
+
+a:hover {
+    color: #bcbcbc;
+}
+
+.city-detail {
+    color: #fff;
+}
+
+.city-detail-container {
+    display: none;
+}
+
+.city-detail-container .city-detail {
+    width: 500px;
+    border: 1px solid #454545;
+}
+
+.map-container {
+    background-image: url(../images/delivery/map.png);
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 850px;
+    position: relative;
+    color: #fff;
+    font-size: 13px;
+    float: left;
+}
+
+.map-container .city-info h2 {
+    margin: 0px 0px 0px 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.map-container a.marker {
+    background-image: url(../images/delivery/marker.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.map-container .form-continent {
+    position: absolute;
+    top: 265px;
+    left: 30px;
+}
+
+.map-container .detail-container {
+    position: absolute;
+    top: 35px;
+    left: 480px;
+    width: 240px;
+    height: 260px;
+}
+
+.map-container .city-detail {
+    position: absolute;
+    width: 230px;
+    padding: 10px;
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+    border-radius: 1.0em;
+    margin-left: 20px;
+}
+
+.map-container .city-detail .city-photo {
+    float: left;
+    margin: 0px 15px 0px 0px;
+    border: 1px solid #fff;
+    border-radius: 1.0em;
+    box-shadow: 0px 5px 3px #454545;
+}
+
+.map-container .city-detail .city-info {
+    width: 130px;
+    float: left;
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+.submit:hover {
+    background: #eee;
+    color: #bc5357;
+    border: 1px solid #eee;
+    border-radius: 0.5em;
+}
+
+.back-btn {
+    clear: both;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+}

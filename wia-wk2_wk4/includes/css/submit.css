@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+    background: #454545;
+}
+
+.pg-container {
+    background: linear-gradient(#454545, #fff);
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: -10px;
+    border: 1px solid #454545;
+    box-shadow: 10px 5px 5px #333;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 1.9em;
+    color: #fff;
+}
+
+section > p {
+    font-weight: 100;
+    font-size: 1.4em;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #bc5357;
+}
+
+a:hover {
+    color: #bcbcbc;
+}
+
+button {
+    margin-top: 50px;
+}
+
+button:hover {
+    background: #eee;
+    color: #bc5357;
+    border: 2px solid #eee;
+    border-radius: 0.5em;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+}

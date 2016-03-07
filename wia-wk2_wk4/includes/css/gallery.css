@@ -1,0 +1,89 @@
+body {
+    font-family: sans-serif;
+    background: #454545;
+}
+
+.pg-container {
+    background: linear-gradient(#454545, #fff);
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: -10px;
+    border: 1px solid #454545;
+    box-shadow: 10px 5px 5px #333;
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: 300;
+    color: #fff;
+    font-size: 1.7em;
+    background: #666;
+    margin-right: 370px;
+    border-radius: 0.2em;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 50px;
+}
+
+figure {
+    margin-bottom: 30px;
+    background: #454545;
+    width: 700px;
+    padding: 20px;
+    border: 1px solid #666;
+    border-radius: 0.5em;
+    float: left;
+}
+
+figcaption {
+    font-weight: 100;
+    color: #fff;
+    float: right;
+    width: 480px;
+}
+
+a {
+    text-decoration: none;
+    color: #bc5357;
+}
+
+a:hover {
+    color: #bcbcbc;
+}
+
+img {
+    border: 1px solid #eee;
+    border-radius: 0.5em;
+}
+
+img:hover {
+    border: 1px solid #bc5357;
+}
+
+#more1 {
+    float: right;
+    margin-right: 388px;
+    margin-top: -150px;
+}
+
+#more2 {
+    float: right;
+    margin-right: 388px;
+    margin-top: -60px;
+}
+
+#more3 {
+    float: right;
+    margin-right: 388px;
+    margin-top: -70px;
+}
+
+.back-btn {
+    margin-top: 80px;
+    clear: both;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+}
