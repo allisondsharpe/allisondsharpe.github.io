@@ -1,0 +1,75 @@
+/* 
+================================================================================
+COMPONENT STYLESHEET
+================================================================================ */
+
+/* body elements */
+body {
+    width: 100%; /* 16px */
+}
+
+/* header elements */
+header {
+    margin-top: 10px;
+    margin-left: 1.25%; /* 20px/16px */
+    border: 1px solid #000;
+    padding: 20px;
+    margin-right: 22.9375%; /* 367px/16px */
+}
+
+/* navigational elements */
+nav {
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    padding: 20px;
+    width: 100%; /* 1600px/16px */
+}
+
+/* a elements */
+a {
+    color: #666;
+    display: inline;
+    margin-right: 1.1875%; /* 19px/16px */
+    margin-top: 20px;
+}
+
+/* a nth-child number two elements */
+a:nth-child(2) {
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+}
+
+/* a nth-child number three elements */
+a:nth-child(3) {
+    padding-left: 25px;
+    border-left: 1px solid #666;
+}
+
+
+/****** RESPONSIVE MEDIA QUERIES ******/
+
+/**** tablet ****/
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+    a {
+        display: block;
+    }
+
+    a:nth-child(2), a:nth-child(3) {
+        border: none;
+        padding: 0;
+    }
+
+}
+
+/**** mobile ****/
+@media screen and (max-width: 600px) {
+    a {
+        display: block;
+    }
+
+    a:nth-child(2), a:nth-child(3) {
+        border: none;
+        padding: 0;
+    }
+}

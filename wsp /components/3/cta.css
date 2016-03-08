@@ -1,0 +1,131 @@
+/* 
+================================================================================
+COMPONENT STYLESHEET
+================================================================================ */
+
+/* body elements */
+body {
+    width: 100%; /* 16px */
+}
+
+/* aside elements */
+aside {
+    border: 1px solid #666;
+    position: absolute;
+    padding: 0px 1.25% 50px 0%; /* left: 20px/16px, right: 22.5px/16px */
+    margin-left: 1.875%; /* 30px/16px */
+    margin-top: 20px;
+    width: 62.5%; /* 1000px/16px */
+}
+
+/* paragraph under header, h1, image after h1, paragraph, and figure elements */
+header + p, h1, h1 + img, ul, footer {
+    padding-left: 4.375%; /* 70px/16px */
+}
+
+/* paragraph under header elements */
+header + p {
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: navy;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* header image nth-of-type number one elements  */
+header img:nth-of-type(1) {
+    width: 8.125%; /* 130px/16px */
+    margin-left: 87.5%; /* 1400px/16px */
+    position: absolute;
+}
+
+/* header image nth-of-type number two elements */
+header img:nth-of-type(2) {
+    width: 60%; /* 800px/16px */
+}
+
+/* h1 elements */
+h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: navy;
+    font-size: 1.6em;
+    font-family: sans-serif;
+}
+
+/* image elements after h1 elements */
+h1 + img {
+    width: 43.75%; /* 700px/16px */
+    height: 200px;
+    margin-left: 46.875%; /* 750px/16px */
+    position: absolute;
+}
+
+/* strong elements */
+strong {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+/* unordered list elements */
+ul {
+    color: #666;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-top: 40px;
+}
+
+/* list item elements */
+li {
+    margin-bottom: 10px;
+}
+
+/* list item a elements */
+li > a {
+    color: #333;
+    font-weight: 600;
+}
+
+/* footer direct paragraph elements */
+footer > p {
+    font-weight: 100;
+    font-family: sans-serif;
+    color: #333;
+    opacity: 0.4;
+    float: left;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/****** RESPONSIVE MEDIA QUERIES ******/
+
+/**** tablet ****/
+
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+    aside {
+        width: 60%;
+    }
+}
+
+/**** mobile ****/
+@media screen and (max-width: 600px) {
+    aside {
+        width: 100%;
+        border: none;
+        margin-top: 0;
+    }
+
+    header img:nth-child(1) {
+        width: 8%;
+        height: 60px;
+    }
+
+    header img:nth-child(2) {
+        width: 50%;
+        height: 50px;
+    }
+
+}

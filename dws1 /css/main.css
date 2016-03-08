@@ -1,0 +1,261 @@
+/* body elements */
+body {
+	background-image: url("../images/sand-blossom.gif"); 
+	background-repeat: repeat;
+	background-position: center; 
+	}
+	
+/* content elements */	
+#content {
+	background: linear-gradient(#d4d3a1, #f4e6a9); 
+	width: 95%;
+	margin: auto auto; 
+    padding: 10px 10px;
+	border: 2px solid #666666;
+    border-radius: 2em 2em; 
+    box-shadow: 2px 2px #d4d3a1;
+	}	
+
+/* h1 elements */
+h1 {
+	color: #ffffff;
+	font-family: Open Sans, sans-serif; 
+	font-size: 2.5em; 
+	text-align: center; 
+	text-shadow: 2px 3px #666666;
+	text-transform: uppercase; 
+	text-decoration: underline; 
+	font-weight: bold; 
+	line-height: 80%; 
+	padding: 20px;
+	}
+		
+/* h2 elements */		
+h2 {
+	color: #ffffff;
+	font-family: Open Sans, sans-serif; 
+	font-size: 2.0em; 
+	font-weight: bold; 
+	line-height: 20%; 
+	text-align: center; 
+	text-shadow: 2px 3px #666666;
+	text-transform: uppercase; 
+	text-decoration: underline; 
+	padding: 10px 10px; 
+	}
+	
+/* h3 elements */		
+h3 {
+	color: #ffffff;
+	font-family: Open Sans, sans-serif; 
+	font-size: 1.5em;
+	text-align: center; 
+	text-shadow: 1px 2px #666666;
+	font-weight: bold; 
+	text-decoration: underline; 
+	}
+	
+/* introduction, history, and genre elements */	
+#introduction, #history, #genres {
+	background-repeat: repeat; 
+	background-position: center; 
+	float: left; 
+	width: 30%;
+	margin: 15px; 
+	padding: 2px; 
+	border: 3px dotted #666666;
+	border-radius: 2em 2em; 
+	}	
+
+/* paragraph elements */		
+p {
+	font-family: Open Sans, sans-serif;
+	font-size: 1.0em; 
+	text-align: center; 
+	padding: 10px; 
+	}	
+	
+/* strong elements */
+strong {
+	color: #ffffff; 
+	}
+	
+/* unvisited link elements */
+a:link {
+	color: #000000;
+	}
+
+/* visited and active link elements */	
+a:visited, a:active {
+	color: #666666;
+	}
+
+/* hover link elements */	
+a:hover {
+	color: #ffffff; 
+	text-decoration: underline;
+	}
+	
+/* navigational elements */	
+nav {
+	color: #000000;
+	font-family: Open Sans, sans-serif;
+	text-align: center; 
+	border: 3px solid #666666;
+	border-radius: 10em 10em; 
+	}
+	
+/* list item elements */
+li {
+	font-family: Open Sans, sans-serif; 
+	text-align: center;
+	margin: 1em;
+	display: inline;
+	}
+
+/* ordered list elements */	
+ol {
+	color: #666666;
+	font-family: Open Sans, sans-serif; 
+	text-align: center;
+	}
+	
+/* ordered list item elements */	
+#xbox, #playstation, #nintendo {
+	list-style: lower-roman none; 
+	display: list-item; 
+}
+		
+/* gaming console elements */	
+#consoles {
+	clear: left; 
+	border: 3px dotted #666666;
+	border-radius: 2em 2em;
+	margin: 0px 200px; 
+	padding: 20px; 
+}
+
+/* aside elements */
+aside {
+	text-align: center; 
+	}
+	
+/* article elements */		
+article {
+	background-image: url("../images/sand-blossom.gif");
+	background-repeat: repeat; 
+	background-position: center; 
+	border: 3px solid #666666;
+	border-radius: 2em 2em; 
+	margin: 50px 400px; 
+	font-family: Open Sans, sans-serif; 
+	text-align: center;
+}		
+
+/* image source elements */
+#imageSources {
+	font-family: Open Sans, sans-serif;
+	text-align: center; 
+	border: 3px solid #666666; 
+	border-radius: 2em 2em;
+	margin: 30px 300px 60px 300px; 
+	    	 }
+		    
+/* image hover elements */		 
+img:hover {
+	background-color: #666666;
+	border: 2px solid #ffffff; 
+ 	padding: 2px; 
+ 	margin: 6px; 
+	      }
+	      
+/* table elements */
+table {
+	width: 40%; 
+	height: 50%; 
+	margin: 50px 390px; 
+	padding: 10px; 
+	text-transform: uppercase;  
+	font-family: Open Sans, sans-serif;
+	font-size: 1.1em;
+	text-align: left; 
+	background-color: #d4d3a1;
+	color: #666666;
+	border: 2px solid #666666;
+	border-collapse: collapse; 
+}
+
+/* table data and heading elements */
+td, th, tr:hover {
+	border: 2px solid #666666; 
+	padding: 10px;  
+	text-align: left; 
+}
+
+/* table hover elements */
+tr :hover {
+	background-color: #dfe1df;
+}
+		      	
+/* form elements */        
+form { 
+	width: 45%;  
+	text-align: left;
+	font-family: Open Sans, sans-serif; 
+	font-size: 0.9em; 
+	border: 2px solid #666666; 
+	background-color: #d4d3a1;
+	margin: 0px auto; 
+	padding: 30px; 
+	color: #666666;
+	}
+	
+/* text area elements */	        
+textarea {
+	width: 50%; 
+	border: 1px solid #666666; 
+	padding: 3px; 
+	}
+
+/* "title" class elements */	
+.title {
+	float: left; 
+	width: 45%;
+	clear: left; 
+}
+
+/* "input" class elements */
+.input {
+	float: left; 
+	}
+	
+/* "title", "firstname", "lastname", "console", "comments", and "submit" elements */	
+.title, #firstname, #lastname, #console, #comments, #submit {
+	margin-bottom: 10px; 
+}
+
+/* "input", "comments", and "search" hover elements */
+.input:hover, #comments:hover, #submit:hover, #search:hover {
+	background-color: #dfe1df;
+}
+
+/* "input", "comments", and "search" focus elements */
+.input:focus, #comments:focus, #submit:focus, #search:focus {
+	background-color: #fef385;
+}
+
+/* footer elements */	        	        
+footer { 
+	margin: 100px 50px; 
+	background: url("../images/flower.png");
+	background-repeat: no-repeat; 
+	background-position: right bottom; 	
+}	    
+      
+/* copyright elements */
+#copyright {
+	font-family: Open Sans, sans-serif;
+	text-align: center; 
+	margin: 10px auto; 
+	opacity: 0.7;
+	}

@@ -1,0 +1,142 @@
+/* 
+================================================================================
+COMPONENT STYLESHEET
+================================================================================ */
+
+/* body elements */
+body {
+    width: 100%; /* 16px */
+}
+
+/* section elements */
+section {
+    padding: 20px 1.25%; /* 20px/16px */
+    margin: 1.25%; /* 20px/16px */
+    background: #eee;
+    overflow: hidden;
+}
+
+/* header elements */
+header {
+    border-bottom: 1px solid #666;
+    margin-bottom: 20px;
+    margin-right: 5.125%; /* 82px/16px */
+}
+
+/* article elements */
+article {
+    width: 50.0%; /* 8px */
+    float: left;
+}
+
+/* header direct h1 elements */
+header > h1 {
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #666;
+    font-size: 1.2em;
+}
+
+/* article direct h1 elements */
+article > h1 {
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #666;
+    font-size: 1.3em;
+    margin-top: 420px;
+    margin-bottom: 20px;
+}
+
+/* figure image elements */
+figure img {
+    float: left;
+}
+
+/* paragraph elements */
+p {
+    clear: left;
+    width: 68.75%; /* 1100px/16px */
+    font-family: sans-serif;
+    color: #666;
+    font-weight: 100;
+    float: left;
+}
+
+/* unordered list elements */
+ul {
+    margin-right: 13.75%; /* 110px/16px */
+}
+
+/* list item elements */
+li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-family: sans-serif;
+    display: block;
+}
+
+/* list item, first child & list item, second child elements */
+li:nth-child(1), li:nth-child(2) {
+    border-bottom: 1px solid #666;
+    padding-bottom: 15px;
+    margin-left: 87.5%; /* 1400px/16px */
+}
+
+/* list item a elements */
+li > a {
+    color: blue;
+    margin-left: 87.3125%; /* 1397px/16px */
+}
+
+
+/****** RESPONSIVE MEDIA QUERIES ******/
+
+/**** tablet ****/
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+
+    article {
+        width: 100%;
+        padding-left: 2%;
+    }
+
+    article:nth-of-type(2) {
+        clear: left;
+        float: left;
+    }
+
+}
+
+/**** mobile ****/
+@media screen and (max-width: 600px) {
+
+    article {
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    article:nth-of-type(1) {
+        border-bottom: 1px solid #666;
+    }
+
+    article:nth-of-type(2)  {
+        clear: left;
+        float: left;
+        margin-top: 10%;
+    }
+
+    article > h1  {
+        clear: left;
+        margin-top: 230%;
+    }
+
+    ul {
+        width: 90%;
+    }
+
+    figure img{
+        width: 60%;
+    }
+
+}

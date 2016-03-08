@@ -1,0 +1,175 @@
+/* 
+================================================================================
+COMPONENT STYLESHEET
+================================================================================ */
+
+/* body elements */
+body {
+    background: #fff;
+    width: 100%; /* 16px */
+}
+
+/* navigational nth-of-type number one elements */
+nav:nth-of-type(1) {
+    margin: 10px 0% 0px 2.8125%; /* right: 50px/16px, left: 45px/16px */
+    background: #197f62;
+    width: 94.375%; /* 1510px/16px */
+    float: left;
+}
+
+/* navigational nth-of-type number one a & unordered list items directly under a elements */
+nav:nth-of-type(1) a { /* targets navigational links */
+    font-size: 1.0em;
+    color: #fff;
+    padding: 20px;
+}
+
+/* navigational unordered list items hover & direct a elements */
+nav ul li:hover > a {
+    text-decoration: none;
+    background: #fff;
+    color: #000;
+    height: 56px;
+}
+
+/* unordered list list item elements */
+ul li {
+    float: left;
+    position: relative;
+    font-size: 1.0em;
+    padding: 20px 0%;
+}
+
+/****** BEGINNING DROP DOWN MENU ELEMENTS *******/
+
+/* span elements */
+span {
+    width: 0;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    margin-top: 6px;
+    margin-left: 1.25%; /* 20px/16px */
+    position: absolute;
+}
+
+/* unordered list under neath a element */
+a + ul { /* targets drop down menu under "services" */
+    padding: 5px 0.3125%; /* 5px/16px */
+    position: absolute;
+    display: block;
+    visibility: hidden;
+}
+
+/* Animation for drop down menu list items below */
+@keyframes drop-down-menu {
+    0%   {background-color: black;}
+    25%  {background-color: gray;}
+    50%  {background-color: lightgray;}
+    100% {background-color: darkgrey;}
+}
+
+/* list item nth-of-type number four hover unordered list items directly after a item elements */
+li:nth-of-type(4):hover a + ul {
+    width: 156.25%; /* 2500px/16px */
+    background-color: #666;
+    animation-name: drop-down-menu;
+    animation-duration: 4s;
+    visibility: visible;
+}
+
+
+/****** ENDING DROP DOWN MENU ELEMENTS *******/
+
+/* navigational nth-of-type number one image last of type elements */
+nav:nth-of-type(1) img:last-of-type { /* targets the bottom image elements in the first navigation tag */
+    height: 60px;
+    float: left;
+    margin-left: 43.75%; /* 700px/16px */
+    position: absolute;
+}
+
+/* figure & figure image elements */
+figure, figure img { /* targets the figure image */
+    width: 31.25%; /* 500px/16px */
+    height: 75px;
+    clear: both;
+    margin: 45px 0% 0px 3.125%; /* 100px/16px */
+}
+
+/* input elements */
+input {
+    margin: 0px 0% 0px 62.5%; /* 1000px/16px */
+    border: 1px solid #000;
+    width: 21.875%; /* 350px/16px */
+    height: 25px;
+    float: left;
+    position: absolute;
+}
+
+/* form & navigational elements under form elements */
+form + nav { /* targets the form as well as the bottom navigational elements */
+    float: left;
+    margin: 0px 0% 0px 86.25%; /* 1380px/16px */
+}
+
+/* navigational image elements under form elements */
+form + nav img { /* targets bottom navigational images */
+    width: 18.75%; /* 300px/16px */
+    height: 25px;
+}
+
+
+/****** RESPONSIVE MEDIA QUERIES ******/
+
+/**** tablet ****/
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+    nav li, nav:nth-of-type(1) img:last-of-type {
+        clear: left;
+    }
+
+    nav:nth-of-type(1) img:last-of-type {
+        margin-left: 70%;
+    }
+
+    figure img {
+        width: 50%;
+    }
+
+}
+
+/**** mobile *****/
+@media screen and (max-width: 600px) {
+
+    nav:nth-of-type(1) {
+        width: 100%;
+        float: left;
+    }
+
+    nav:nth-of-type(1) img:last-of-type {
+        margin-left: 15%;
+    }
+
+    nav li {
+        clear: left;
+    }
+
+    nav:nth-of-type(2) {
+        clear: left;
+        margin-top: 10%;
+        width: 30%;
+        margin-left: 62%;
+    }
+
+    figure img {
+        width: 130%;
+        margin-top: 50%;
+    }
+
+    input {
+        margin-left: 55%;
+        width: 40%;
+    }
+
+}

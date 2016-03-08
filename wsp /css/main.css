@@ -1,0 +1,303 @@
+/*
+================================================================================
+WSP COMPONENT LIBRARY STYLESHEET
+================================================================================ */
+
+/* body elements */
+body {
+    width: 100%; /* 16px */
+    background: url('../images/bg.jpg');
+}
+
+/* section elements */
+section {
+    width: 75%; /* 1200px/16px */
+    background: #f2f2f2;
+    margin-top: 50px;
+    margin-left: 12.5%; /* 200px/16px */
+    margin-bottom: 50px;
+    border: 1px solid #eee;
+    padding: 30px;
+    overflow: hidden;
+    box-shadow: 8px -8px #666;
+    font-family: sans-serif, arial;
+}
+
+/* section & direct h1 elements */
+section > h1 {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 2.0em;
+}
+
+/* article elements */
+article {
+    color: #666;
+    font-weight: 400;
+}
+
+/* article direct paragraph elements */
+article > p {
+    color: #666;
+    font-weight: 200;
+}
+
+/* h1 elements */
+h1 {
+    color: #666;
+    font-weight: 300;
+    font-size: 2.0em;
+    margin-left: 50px;
+}
+
+/* h2 elements */
+h2 {
+    font-size: 1.1em;
+}
+
+/* h2 & paragraph elements */
+h2, h2 + p {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+/* h3 elements */
+h3 {
+    text-align: left;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 60px;
+    font-size: 2.4em;
+    color: #666;
+    font-weight: 300;
+}
+
+/* paragraph elements */
+p {
+    margin-bottom: 20px;
+}
+
+/* introduction image id elements */
+#introimg {
+    float: right;
+    clear: right;
+    margin-right: 5%;
+    margin-top: -80px;
+    border: 1px solid lightgrey;
+    border-radius: 10em;
+    width: 23%;
+    height: 228px;
+}
+
+/* introduction id & direct paragraph elements */
+#introduction > p {
+    color: #666;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    width: 60%;
+    font-style: italic;
+    font-weight: 200;
+}
+
+/* button elements */
+button {
+    border-top: 1px solid lightgrey;
+    background: #4492ff;
+    padding: 10px 10px 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 1.0em;
+    font-family: sans-serif, arial;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-left: 390px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+/* button hover elements */
+button:hover {
+    border-top-color: #28597a;
+    background: #28597a;
+    color: #ccc;
+}
+
+/* button active elements */
+button:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+}
+
+/* HEADER SPECIFIC ======================================== */
+
+/* header id & direct image elements */
+#header > img {
+    margin-left: 48px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    width: 75%;
+    height: 110px;
+}
+
+/* ABOUT SPECIFIC ======================================== */
+
+/* about id & direct image elements */
+#about > img {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    width: 65%;
+    height: 300px;
+}
+
+/* CTA SPECIFIC ======================================== */
+
+/* cta id & direct image elements */
+#cta > img {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    width: 60%;
+    height: 250px;
+}
+
+/* FEATURES SPECIFIC ======================================== */
+
+/* features id & direct image elements */
+#features > img {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    width: 63%;
+    height: 350px;
+}
+
+/* MEET THE TEAM SPECIFIC ======================================== */
+
+/* team id & direct image elements */
+#team > img {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    width: 70%;
+    height: 400px;
+}
+
+/* CONTACT SPECIFIC ======================================== */
+
+/* contact id & direct image elements */
+#contact > img {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    width: 59%;
+    height: 320px;
+}
+
+/* LOG IN/REGISTER SPECIFIC ======================================== */
+
+/* login id & direct image elements */
+#login > img {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    width: 60%;
+    height: 220px;
+}
+
+/* NAVIGATION SPECIFIC ======================================== */
+
+/* navigation id & direct image elements */
+#navigation > img {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    width: 83%;
+    height: 60px;
+}
+
+/* SEARCH SPECIFIC ======================================== */
+
+/* search id & direct image elements */
+#search > img {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    width: 55%;
+    height: 30px;
+}
+
+/* FOOTER SPECIFIC ======================================== */
+
+/* footer id & direct image elements */
+#footer > img {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    width: 81%;
+    height: 270px;
+}
+
+
+/***** tablet *****/
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+
+    section {
+        width: 70%;
+    }
+
+    #introimg {
+        margin-bottom: 5%;
+        width: 25%;
+        height: 200px;
+    }
+
+    button {
+        margin-left: 40%;
+    }
+
+}
+
+/***** mobile ******/
+@media screen and (max-width: 600px) {
+
+    section {
+        width: 80%;
+        padding: 10%;
+    }
+
+    #introimg {
+        margin-bottom: 5%;
+        width: 90%;
+        height: 300px;
+    }
+
+    #header > img, #about > img, #cta > img, #features > img, #team > img,
+    #contact > img, #login > img, #navigation > img, #search > img, #footer > img {
+        margin-left: 0%;
+        margin-right: 500%;
+        width: 100%;
+    }
+
+    h3 {
+        padding-bottom: 20%;
+    }
+
+    img {
+        width: 500%;
+    }
+
+    button {
+        margin-left: 20%;
+    }
+
+}

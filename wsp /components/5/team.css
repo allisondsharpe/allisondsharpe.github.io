@@ -1,0 +1,159 @@
+/* 
+================================================================================
+COMPONENT STYLESHEET
+================================================================================ */
+
+/* body elements */
+body {
+    width: 100%; /* 16px */
+}
+
+/* header direct h1 elements */
+header > h1 {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+/* header elements */
+header, article {
+    margin: 20px 0% 0px 1.25%; /* 20px/16px */
+    font-family: sans-serif;
+}
+
+/* header direct paragraph elements */
+header > p {
+    font-weight: 100;
+}
+
+
+/*********************** BEGINNING ARTICLE ELEMENTS *************************/
+
+
+/* article elements */
+article {
+    display: inline-block;
+    margin: 50px 7.5% 0px 3.4375%; /* left: 120px/16px, right: 55px/16px */
+}
+
+/* article image elements */
+article > img {
+    width: 25%; /* 400px/16px */
+    height: 130px;
+    border: 1px solid #000;
+    border-radius: 200px;
+    float: left;
+}
+
+/* h1 elements */
+article > h1 {
+    margin: 20px 0% 5px 27.8125%; /* 445px/16px */
+    font-size: 1.2em;
+    color: #666;
+    font-weight: 400;
+    border-top: 1px solid #666; /* adds border on top of h1 */
+    padding-top: 20px;
+    width: 23.75%; /* 380px/16px */
+}
+
+/* article paragraph nth-of-type number one elements */
+article > p:nth-of-type(1) {
+    font-weight: 100;
+    margin-left: 28.125%; /* 450px/16px */
+}
+
+/* article paragraph nth-of-type number two elements */
+article > p:nth-of-type(2) {
+    width: 385px;
+    font-weight: 100;
+    margin: 20px 0% 0px 28.125%; /* 450px/16px */
+}
+
+/* article direct paragraph nth-of-type number one elements */
+article > p:nth-of-type(1) { /* targets first paragraph in article elements */
+    color: lightgray;
+}
+
+/* article nth-of-type number one direct paragraph nth-of-type number one elements */
+article:nth-of-type(1) > p:nth-of-type(1) { /* targets only first paragraph of first article element */
+    text-transform: uppercase;
+}
+
+
+/*********************** ENDING ARTICLE ELEMENTS *************************/
+
+
+/* figure elements */
+figure {
+    clear: left;
+    position: absolute;
+}
+
+/* figure image elements */
+figure img {
+    float: left;
+    margin-left: 0.125%; /* 2px/16px */
+}
+
+/* article nth-of-type number one figure image & article nth-of-type number three figure image elements */
+article:nth-of-type(1) figure img, article:nth-of-type(3) figure img {
+    width: 1.5%
+}
+
+/* article nth-of-type number two figure image & article nth-of-type number four figure image elements */
+article:nth-of-type(2) figure img, article:nth-of-type(4) figure img {
+    width: 3%
+}
+
+
+/****** RESPONSIVE MEDIA QUERIES ******/
+
+
+/***** tablet ******/
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+    header {
+        padding: 2%;
+    }
+
+    article > img {
+        width: 25%; /* 400px/16px */
+        height: 130px;
+    }
+
+    article:nth-of-type(1) figure img, article:nth-of-type(3) figure img,
+    article:nth-of-type(2) figure img, article:nth-of-type(4) figure img {
+        width: 2%;
+    }
+
+}
+
+/****** mobile ******/
+@media screen and (max-width: 600px) {
+    header {
+        padding: 5%;
+    }
+
+    article > h1, article > p, article > figure  {
+        clear: left;
+    }
+
+    article > img {
+        width: 24%;
+        height: 125px;
+        margin-top: 5%;
+        position: absolute;
+    }
+
+    article > p:nth-of-type(2) {
+        width: 80%;
+    }
+
+    article:nth-of-type(1) figure img, article:nth-of-type(3) figure img,
+    article:nth-of-type(2) figure img, article:nth-of-type(4) figure img {
+        width: 4%;
+        margin-left: 0.3%;
+        margin-top: 5%;
+    }
+
+}
+

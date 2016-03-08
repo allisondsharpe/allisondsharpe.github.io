@@ -1,0 +1,189 @@
+/* 
+================================================================================
+COMPONENT STYLESHEET
+================================================================================ */
+
+/* body elements */
+body {
+    background: #f6f6f6;
+    font-family: sans-serif;
+    width: 100%; /* 16px */
+}
+
+/* header elements */
+header {
+    margin: 0px 5% 10px 3.125%; /* 80px/16px, 50px/16px */
+    border-bottom: 3px solid #666;
+    padding: 20px 0% 5px 0.125%; /* 2px/16px */
+}
+
+/* h1 elements */
+h1 {
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* h2 element directly under figure element */
+figure + h2 { /* targets first h2 element */
+    margin: 33px 0% 0px 7.1875%; /* 115px/16px */
+}
+
+/* h2 element direct under figure element */
+nav + h2 { /* targets second h2 element */
+    margin: 48px 0% 0px 7.1875%; /* 115px/16px */
+}
+
+/* figure elements */
+figure {
+    margin-left: 1.875%; /* 30px/16px */
+    float: left;
+}
+
+/* figure image elements */
+figure img {
+    height: 350px;
+    border: 1px solid #f6f6f6;
+}
+
+
+/******** BEGINNING FIRST NAVIGATIONAL ELEMENTS ********/
+
+
+/* navigational nth-of-type number one elements */
+nav:nth-of-type(1) { /* targets first navigational tag */
+    background: #fff;
+    margin: 20px 4.875% 0px 7.1875%; /* 78px/16px, 115px/16px */
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px 0px 0px #eee;
+    height: 210px;
+}
+
+/* navigational nth-of-type number one a elements */
+nav:nth-of-type(1) a {
+    color: #000;
+}
+
+
+/****** NAVIGATIONAL ONE ELEMENTS ******/
+
+
+/****** BUYING ELEMENTS ******/
+
+
+/* navigational nth-of-type number one image nth-of-type number one elements */
+nav:nth-of-type(1) img:nth-of-type(1) {
+    margin-left: 14.375%; /* 230px/16px */
+    margin-top: 40px;
+    position: absolute;
+}
+
+/* navigational nth-of-type number one h3 nth-of-type number one elements */
+nav:nth-of-type(1) h3:nth-of-type(1) {
+    margin-left: 15.3125%; /* 245px/16px */
+    margin-top: 160px;
+    position: absolute;
+}
+
+
+/****** SELLING ELEMENTS ******/
+
+
+/* navigational nth-of-type number one image nth-of-type number two elements */
+nav:nth-of-type(1) img:nth-of-type(2) {
+    margin-left: 40.625%; /* 650px/16px */
+    margin-top: 40px;
+    position: absolute;
+}
+
+/* navigational nth-of-type number one h3 nth-of-type number two elements */
+nav:nth-of-type(1) h3:nth-of-type(2) {
+    margin-left: 41.5625%; /* 665px/16px */
+    margin-top: 160px;
+    position: absolute;
+}
+
+
+/****** ACCOUNT ELEMENTS ******/
+
+
+/* navigational nth-of-type number one image nth-of-type number three elements */
+nav:nth-of-type(1) img:nth-of-type(3) {
+    margin-left: 68.125%; /* 1090px/16px */
+    margin-top: 40px;
+    position: absolute;
+}
+
+/* navigational nth-of-type number one h3 nth-of-type number three elements */
+nav:nth-of-type(1) h3:nth-of-type(3) {
+    margin-left: 68.75%; /* 1100px/16px */
+    margin-top: 160px;
+    position: absolute;
+}
+
+
+/******** ENDING FIRST NAVIGATIONAL ELEMENTS ********/
+
+
+/* navigational nth-of-type number two elements */
+nav:nth-of-type(2) { /* targets second navigational tag */
+    background: #f6f6f6;
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px 0px 0px #eee;
+    margin: 20px 79.0625% 0px 7.1875%; /* 1265px/16px, 115px/16px */
+    height: 250px;
+}
+
+/* navigational nth-of-type number two image elements */
+nav:nth-of-type(2) img:nth-of-type(1) { /* targets second navigational tag's nested image */
+    width: 50%; /* 800px/16px */
+    margin: 60px 0% 0px 25%; /* 400px/16px */
+}
+
+/* navigational nth-of-type number two h3 elements */
+nav:nth-of-type(2) h3:nth-of-type(1) { /* targets all h3 elements */
+    margin: 20px 0% 0px 35.9375%; /* 575px/16px */
+}
+
+/* navigational nth-of-type number two a elements */
+nav:nth-of-type(2) a {
+    color: #666;
+}
+
+
+/****** RESPONSIVE MEDIA QUERIES ******/
+
+
+/****** tablet ******/
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+    nav:nth-of-type(1) img, nav:nth-of-type(1) h3 {
+        display: block;
+    }
+
+    nav:nth-of-type(2) img, nav:nth-of-type(1) h3 {
+        display: block;
+    }
+
+    nav:nth-of-type(2) {
+        width: 25%;
+        margin-left: 10%;
+    }
+
+}
+
+/****** mobile ******/
+@media screen and (max-width: 600px) {
+    nav:nth-of-type(1) img, nav:nth-of-type(1) h3 {
+        display: block;
+    }
+
+    nav:nth-of-type(2) img, nav:nth-of-type(1) h3 {
+        display: block;
+    }
+
+    nav:nth-of-type(2) {
+        width: 40%;
+        margin-left: 16%;
+    }
+
+}

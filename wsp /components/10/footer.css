@@ -1,0 +1,188 @@
+/* 
+================================================================================
+COMPONENT STYLESHEET
+================================================================================ */
+
+/* body elements */
+body {
+    width: 100%; /* 16px */
+}
+
+/* footer elements */
+footer {
+    background: #333;
+    overflow: hidden;
+    margin: 0.3125%; /* 5px/16px */
+    font-family: sans-serif;
+}
+
+/* h1 elements */
+h1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #377cff;
+    font-size: 1.1em;
+}
+
+/* paragraph elements */
+p {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #eee;
+}
+
+/* article paragraph elements */
+article p {
+    width: 96.875%; /* 1550px/16px */
+}
+
+/* article, navigational nth-of-type number one, & navigational nth-of-type number two elements */
+article, nav:nth-of-type(1), nav:nth-of-type(2) {
+    float: left;
+    width: 16.875%; /* 270px/16px */
+    margin: 27px 3.5625% 25px 5%; /* 57px/16px, 60px/16px */
+}
+
+/* navigational nth-of-type number one and navigational nth-of-type number two elements */
+nav:nth-of-type(1), nav:nth-of-type(2) {
+    margin: 30px 0% 200px 7.5%; /* 120px/16px */
+}
+
+/* navigational nth-of-type number one list items and navigational nth-of-type number two list item elements */
+nav:nth-of-type(1) li, nav:nth-of-type(2) li {
+    list-style-type: circle;
+    color: #377cff;
+    margin-top: 20px;
+}
+
+/* navigational nth-of-type number three elements */
+nav:nth-of-type(3) {
+    clear: left;
+    background: #424242;
+    padding: 25px 1.75%; /* 28px/16px */
+    margin-top: 30px;
+}
+
+/* navigational nth-of-type number three a elements */
+nav:nth-of-type(3) li { /* targets all a elements in the third navigational tag */
+    padding-left: 2.8125%; /* 45px/16px */
+    font-weight: 100;
+    display: inline-block;
+}
+
+/* unordered list items */
+ul {
+    margin-bottom: 10px;
+}
+
+/* a elements */
+a {
+    color: #eee;
+}
+
+/* footer nth-of-type number two paragraph elements */
+nav:nth-of-type(4) p { /* targets the paragraph elements within the second footer tag */
+    display: inline-block;
+    margin: 20px 0% 40px 0.75%; /* 12px/16px */
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #666;
+}
+
+/* footer nth-of-type number two direct paragraph nth-child number one elements */
+nav:nth-of-type(4) > p:nth-child(1) { /* targets the first paragraph element within the second footer tag */
+    border-right: 1px solid #666;
+    padding-left: 3.625%; /* 58px/16px */
+    padding-right: 1.25%; /* 20px/16px */
+}
+
+/* footer nth-of-type number two a elements */
+nav:nth-of-type(4) a { /* targets all a elements in the second footer tag */
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #eee;
+}
+
+/* footer image elements */
+footer img {
+    width: 2.1875%; /* 28px/16px */
+    float: right;
+    padding-right: 0.625%; /* 10px/16px */
+    margin-top: 20px;
+}
+
+
+/****** RESPONSIVE MEDIA QUERIES ******/
+
+/***** tablet *****/
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+    article:nth-of-type(2) {
+        clear: left;
+    }
+
+    article, nav {
+        width: 50%;
+        padding-left: 10px;
+        margin: 0;
+    }
+
+    nav:nth-of-type(1), nav:nth-of-type(2) {
+        width: 30%;
+        margin-top: 0;
+    }
+
+    nav:nth-of-type(3),  nav:nth-of-type(4) {
+        width: 100%;
+    }
+
+    nav:nth-of-type(4) {
+        padding-left: 0%;
+    }
+
+    nav:nth-of-type(4) img{
+        width: 3%;
+    }
+
+}
+
+/***** mobile ******/
+@media screen and (max-width: 600px) {
+    article, nav {
+        clear: left;
+        width: 80%;
+    }
+
+    nav:nth-of-type(1), nav:nth-of-type(2) {
+        margin-bottom: 10%;
+    }
+
+    nav h1, nav ol {
+        width: 300%;
+    }
+
+    nav:nth-of-type(3) {
+        width: 100%;
+    }
+
+    nav:nth-of-type(3) li {
+        display: block;
+        padding: 3%;
+        width: 100%;
+    }
+
+    nav:nth-of-type(4) > p:nth-of-type(1) {
+        border: none;
+        margin-bottom: 0;
+    }
+
+    nav:nth-of-type(4) > p:nth-of-type(2) {
+        padding-left: 3.7%;
+    }
+
+    nav:nth-of-type(4) img {
+        width: 6%;
+        clear: left;
+        margin: 0;
+    }
+
+}

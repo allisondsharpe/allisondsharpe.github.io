@@ -1,0 +1,155 @@
+/* 
+================================================================================
+COMPONENT STYLESHEET
+================================================================================ */
+
+/* body elements */
+body {
+    width: 100%; /* 16px */
+}
+
+/* sign in form nth-child elements */
+form:nth-child(1) {
+    padding-left: 2.5%; /* 40px/16px */
+    border-right: 1px solid #eee;
+    box-shadow: 2px 0px 0px 0px lightgray;
+    float: left;
+    width: 50%; /* 800px/16px */
+    font-family: sans-serif;
+}
+
+/* h1 elements */
+h1 {
+    margin-bottom: 35px;
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* form direct paragraph elements */
+form > p {
+    width: 61.25%; /* 980px/16px */
+    margin-left: 3.75%; /* 60px/16px */
+    clear: left;
+    float: left;
+}
+
+/* form a elements */
+form > a {
+    text-decoration: underline;
+    margin: 5px 0% 10px 0%;
+}
+
+/* register form nth-child elements */
+form:nth-child(2) {
+    float: left;
+    padding-left: 14.375%; /* 230px/16px */
+    text-align: center;
+    margin-top: 80px;
+    font-family: sans-serif;
+}
+
+/* register form nth-child direct paragraph elements */
+form:nth-child(2) > p {
+    width: 100%; /* 1600px/16px */
+    margin-left: 0.0625%; /* 1px/16px */
+}
+
+/* label, input, form direct paragraph, & form direct a elements */
+label:nth-of-type(1), label:nth-of-type(2), input:nth-of-type(1), input:nth-of-type(2), form > a {
+    float: left;
+    clear: left;
+    margin-bottom: 5px;
+    font-size: 1.0em;
+}
+
+/* label nth-of-type number three and input nth-of-type number three elements */
+label:nth-of-type(3), input:nth-of-type(3) {
+    clear: left;
+    float: left;
+}
+
+/* label for "stay signed in" nth-of-type number three elements */
+label:nth-of-type(3) {
+    margin-left: 3.75%; /* 60px/16px */
+    margin-top: 5px;
+    font-size: 1.1em;
+    font-weight: 500;
+    clear: left;
+}
+
+/* inputs for username & password nth-of-type numbers 1 & 2 elements */
+input:nth-of-type(1), input:nth-of-type(2) {
+    width: 50%; /* 800px/16px */
+    height: 30px;
+    border: 1px solid #eee;
+}
+
+/* input hover elements */
+input:hover {
+    border: 1px solid #666;
+}
+
+/* button elements */
+button {
+    float: left;
+    clear: left;
+    font-size: 0.9em;
+}
+
+/* sign in button nth-child 2n+0 elements (tracks even numbers from 2,4,6,8,etc..) */
+button:nth-child(2n+0) { /* targets sign in button */
+    display: block;
+    margin-top: 20px;
+    background: #112ba5;
+    border: 1px solid #112ba5;
+    border-radius: 0.5em;
+    color: #fff;
+    height: 40px;
+    width: 15.625%; /* 250px/16px */
+    font-size: 1.0em;
+    font-weight: 300;
+}
+
+/* register button nth-child 2n+1 elements (tracks odd numbers from 1,3,5,7,etc..) */
+button:nth-child(2n+1) { /* targets register button */
+    display: block;
+    margin-top: 10px;
+    margin-left: 28.125%; /* 450px/16px */
+    background: #4492ff;
+    border: 1px solid #4492ff;
+    border-radius: 0.5em;
+    color: #fff;
+    height: 40px;
+    width: 43.75%; /* 700px/16px */
+    font-size: 1.0em;
+    font-weight: 300;
+}
+
+
+/****** RESPONSIVE MEDIA QUERIES ******/
+
+/**** tablet ****/
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+    form:nth-of-type(1) {
+        width: 50%;
+    }
+
+    button:nth-child(2n+0) {
+        width: 20%;
+    }
+
+}
+
+/**** mobile ****/
+@media screen and (max-width: 600px) {
+    form:nth-of-type(1) {
+        width: 130%;
+        margin-left: 10%;
+    }
+
+    button:nth-child(2n+0) {
+        width: 20%;
+    }
+
+}
